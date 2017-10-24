@@ -1,3 +1,41 @@
+/*setear mi css ---- formatear las estructuras de html*/
 body{
-    background-color: pink;
+     
+    box-sizing: border-box;
+    color: #303030;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*clases reutilizables*/
+.text-uppercase{
+    text-transform: uppercase;
+}
+/*clases específicas*/
+li a{
+    text-decoration: none;/*borra la linea de la palabra*/
+    color: inherit; 
+}
+ul li{
+    /*kita viñetas*/
+    list-style: none;
+    display: inline;/* uno a lado de otro*/
+    margin: 5px;
+}
+.logo-header{
+  width: 200px;
+
+}
+header{
+  position: relative;/*padre*/
+}
+nav{
+  /*float: right;*/
+  position: absolute;/*hijo*/
+  right: 0;
+  top:50%;
+  transform: translateY(-50%); /*centrar mi caja*/
+} 
+.box-header{
+  display: inline-block;
 }
